@@ -39,7 +39,7 @@ a {
 
 /* General styling */
 body {
-    margin:             20px 80px 60px;
+    margin:             20px 80px 20px;
     font-size:          24px;
     line-height:        1.4;
     font-family:        'league_spartanregular', Helvetica, sans-serif;
@@ -50,7 +50,7 @@ body {
     }
 
 header {
-    margin:             20px;
+    margin:             40px;
     font-size:          48px;
     font-family:        'league_spartanregular', Helvetica, sans-serif;
     text-align:         center;
@@ -91,20 +91,43 @@ header {
     header {
     margin:             10px 20px;
     font-size:          20px;
-    font-family:        sans-serif;
     text-align:         center;
     font-weight:        bold;
     font-style:         bold;
+    grid-column-start:  1;
+    grid-column-end:    3;
+    grid-row-start:     1;
+    grid-row-end:       2;
     }
 
     body {
     margin:             10px 20px;
     font-size:          14px;
-    font-family:        sans-serif;
     text-align:         left;
     font-weight:        normal;
     font-style:         normal;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows:    1fr 2fr;
+    grid-gap:              20px;
     }
+
+    .special {
+    border:             3px solid black;
+    padding:            10px;
+    font-size:          14px;
+    grid-column-start:  1;
+    grid-column-end:    3;
+    grid-row-start:     3;
+    grid-row-end:       4;
+}
+
+#text {
+    grid-column-start:  1;
+    grid-column-end:    3;
+    grid-row-start:     2;
+    grid-row-end:       3;
+    text-align:         center;
+}
 
     }
 

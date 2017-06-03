@@ -54,6 +54,7 @@ header {
     font-size:          48px;
     font-family:        'league_spartanregular', Helvetica, sans-serif;
     text-align:         center;
+    vertical-align:     center;
     grid-column-start:  1;
     grid-column-end:    3;
     grid-row-start:     1;
@@ -83,6 +84,7 @@ header {
     grid-column-end:    2;
     grid-row-start:     2;
     grid-row-end:       3;
+
 }
 
 /* Responsive stuff */
@@ -107,18 +109,26 @@ header {
     font-weight:        normal;
     font-style:         normal;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows:    1fr 2fr;
-    grid-gap:              20px;
+    grid-template-rows:    .5fr 2fr 2fr;
+    grid-gap:              5px;
     }
 
     .special {
     border:             3px solid black;
     padding:            10px;
-    font-size:          14px;
+    font-size:          20px;
     grid-column-start:  1;
     grid-column-end:    3;
     grid-row-start:     3;
     grid-row-end:       4;
+}
+
+#links {
+    display:            flex;
+    justify-content:    space-between;
+    flex-direction:     column;
+    margin:             10px 5px;
+    text-align:         center;
 }
 
 #text {

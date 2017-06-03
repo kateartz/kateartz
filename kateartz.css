@@ -1,0 +1,110 @@
+/* CSS RESET - Jack Turner style--Kate Artz version--few enough rules you can grasp it in your mindbrain */
+* {
+    margin:             0px;
+    padding:            0px;
+    }
+  
+img {
+    border:             none;
+    vertical-align:     middle;
+    }
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight:        normal;
+    text-align:         center;
+    }
+
+html {
+    box-sizing:         border-box;
+    }
+
+*, *:before, *:after {
+    box-sizing:         inherit;
+    }
+
+/* Custom fonts */
+
+@font-face {
+    font-family: 'league_spartanregular';
+    src: url('leaguespartan-bold.woff2') format('woff2'),
+         url('leaguespartan-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a {
+    padding:            5px auto;
+}
+
+/* General styling */
+body {
+    margin:             20px 80px 60px;
+    font-size:          24px;
+    line-height:        1.4;
+    font-family:        'league_spartanregular', Helvetica, sans-serif;
+    display:            grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows:    1fr 3fr;
+    grid-gap:              20px;
+    }
+
+header {
+    margin:             20px;
+    font-size:          48px;
+    font-family:        'league_spartanregular', Helvetica, sans-serif;
+    text-align:         center;
+    grid-column-start:  1;
+    grid-column-end:    3;
+    grid-row-start:     1;
+    grid-row-end:       2;
+    }
+
+#text {
+    grid-column-start:  2;
+    grid-column-end:    3;
+    grid-row-start:     2;
+    grid-row-end:       3;
+    text-align:         center;
+}
+
+#links {
+    display:            flex;
+    justify-content:    space-between;
+    flex-direction:     column;
+    margin:             20px 10px;
+}
+
+.special {
+    border:             3px solid black;
+    padding:            10px;
+    font-size:          24px;
+    grid-column-start:  1;
+    grid-column-end:    2;
+    grid-row-start:     2;
+    grid-row-end:       3;
+}
+
+/* Responsive stuff */
+@media    (max-width: 450px) {
+
+    header {
+    margin:             10px 20px;
+    font-size:          20px;
+    font-family:        sans-serif;
+    text-align:         center;
+    font-weight:        bold;
+    font-style:         bold;
+    }
+
+    body {
+    margin:             10px 20px;
+    font-size:          14px;
+    font-family:        sans-serif;
+    text-align:         left;
+    font-weight:        normal;
+    font-style:         normal;
+    }
+
+    }
+

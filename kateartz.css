@@ -33,6 +33,17 @@ html {
 
 }
 
+@font-face {
+    font-family: 'chunkfive';
+    src: url('Chunkfive-webfont.eot') format('eot'),
+         url('Chunkfive-webfont.woff') format('woff'),
+         url('Chunkfive-webfont.svg') format('svg'),
+         url('Chunkfive-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 a {
     padding:            5px auto;
 }
@@ -45,16 +56,15 @@ body {
     font-family:        'league_spartanregular', Helvetica, sans-serif;
     display:            grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows:    1fr 3fr;
+    grid-template-rows:    1fr 4fr;
     grid-gap:              20px;
     }
 
 header {
-    margin:             40px;
+    margin:             20px;
     font-size:          48px;
-    font-family:        'league_spartanregular', Helvetica, sans-serif;
+    font-family:        'chunkfive', Helvetica, sans-serif;
     text-align:         center;
-    vertical-align:     center;
     grid-column-start:  1;
     grid-column-end:    3;
     grid-row-start:     1;
